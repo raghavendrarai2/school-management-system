@@ -1,0 +1,190 @@
+/* Custom Styles for Rahav Public School Cloud Management Software */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --primary: #1e3a8a;
+  --primary-light: #3b82f6;
+  --secondary: #d97706;
+  --accent-gold: #f59e0b;
+}
+
+body {
+  font-family: 'Outfit', 'Noto Sans Devanagari', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-hindi {
+  font-family: 'Noto Sans Devanagari', 'Outfit', sans-serif;
+}
+
+/* Glassmorphism & Modern Shadows */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(229, 231, 235, 0.8);
+}
+
+.glass-dark {
+  background: rgba(17, 24, 39, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(55, 65, 81, 0.6);
+}
+
+/* Mobile Phone Frame Simulator */
+.mobile-device-frame {
+  width: 390px;
+  height: 800px;
+  border-radius: 44px;
+  border: 12px solid #1f2937;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.4), 0 0 0 2px rgba(255, 255, 255, 0.1);
+  background: #f8fafc;
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-notch {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 26px;
+  background-color: #1f2937;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-speaker {
+  width: 48px;
+  height: 4px;
+  background-color: #4b5563;
+  border-radius: 4px;
+}
+
+.mobile-camera {
+  width: 8px;
+  height: 8px;
+  background-color: #111827;
+  border: 2px solid #374151;
+  border-radius: 50%;
+  margin-left: 8px;
+}
+
+.mobile-screen-content {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-top: 36px;
+  padding-bottom: 70px;
+}
+
+.mobile-screen-content::-webkit-scrollbar {
+  width: 4px;
+}
+.mobile-screen-content::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+.mobile-bottom-nav {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 64px;
+  background: #ffffff;
+  border-top: 1px solid #e2e8f0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 40;
+  padding-bottom: 8px;
+}
+
+/* WhatsApp Message Bubble Simulation */
+.whatsapp-bubble {
+  position: relative;
+  background: #e7ffdb;
+  border-radius: 12px;
+  border-top-left-radius: 0;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.sms-bubble {
+  position: relative;
+  background: #f1f5f9;
+  border-radius: 14px;
+  border-top-left-radius: 2px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+/* Official CBSE Style Marksheet Preview */
+.cbse-marksheet-sheet {
+  background: #ffffff;
+  border: 3px double #1e3a8a;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  position: relative;
+}
+
+.cbse-watermark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-30deg);
+  font-size: 5rem;
+  font-weight: 800;
+  color: rgba(30, 58, 138, 0.04);
+  pointer-events: none;
+  white-space: nowrap;
+  user-select: none;
+}
+
+/* Banner Generator Canvas Container */
+.banner-export-preview {
+  aspect-ratio: 16 / 9;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+  border-radius: 16px;
+}
+
+/* Animation utilities */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.25s ease-out forwards;
+}
+
+/* Floating Switcher Bar */
+.demo-top-bar {
+  background: #0f172a;
+  color: #f8fafc;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
